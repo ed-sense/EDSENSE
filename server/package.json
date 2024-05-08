@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "build":"npm i"
+    "build": "npm i"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +19,7 @@
     "joi": "^17.5.0",
     "joi-password-complexity": "^5.1.0",
     "jsonwebtoken": "^8.5.1",
-    "mongodb": "^5.2.0",
+    "mongodb": "^6.6.1",
     "mongoose": "^6.1.2",
     "nodemon": "^2.0.15"
   }
