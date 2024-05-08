@@ -232,7 +232,6 @@ const Test = () => {
         );
         console.log("Exhausted Array for Stage 3");
         setExhaust(true);
-        sendUserResult();
         handleTestComplete();
       } else if (support === 3) {
         console.log("Support = 3");
@@ -250,7 +249,6 @@ const Test = () => {
         );
         console.log("Exhausted Array for Stage 3");
         setExhaust(true);
-        sendUserResult();
         handleTestComplete();
       } else if (support < 3 && level > 1) {
         let lastadded = arrayLevel.pop();
@@ -595,7 +593,6 @@ const Test = () => {
           );
           console.log("Exhausted Array for Stage 3");
           setExhaust(true);
-          sendUserResult();
           handleTestComplete();
         } else if (support === 3) {
           support = 0;
@@ -613,7 +610,6 @@ const Test = () => {
           );
           console.log("Exhausted Array for Stage 3");
           setExhaust(true);
-          sendUserResult();
           handleTestComplete();
         } else if (support < 3 && level > 1) {
           let lastadded = arrayLevel.pop();
@@ -660,10 +656,6 @@ const Test = () => {
   // ! Handle Test Complete function
 
   const handleTestComplete = () => {
-    R_ans.push(Q_arr[Q_arr.length - 1]);
-    let str = minutes.toString().concat(":", seconds.toString());
-    Timer.push(str);
-
     setGameover(true);
     sendUserResult();
   };
@@ -759,7 +751,7 @@ const Test = () => {
 
   const sendUserResult = async (e) => {
     try {
-      const url = "https://edsensebackend.onrender.com/api/usersResult";
+      const url = "http://localhost:8080/api/usersResult";
       const { data: res } = await axios.post(url, {
         email: payload.email,
         Q_arr: Q_arr,
