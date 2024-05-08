@@ -21,19 +21,21 @@ EDSENSE Project
 1. Clone the repo
 
 ```sh
-git clone https://github.com/om-ghate/EDSENSE.git
+git clone https://github.com/ed-sense/EDSENSE.git
 ```
+
 2. Install NPM packages
 
-  **Run Server**
+   **Run Server**
+
 ```sh
 cd server
 npm install
 npm start
 ```
-    
-    
-  **Run Client**
+
+**Run Client**
+
 ```sh
 cd client
 npm install
