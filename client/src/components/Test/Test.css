@@ -1,0 +1,204 @@
+.Test {
+  text-align: center;
+  background-color: #e9f7fa;
+  min-height: 100vh;
+  background-image: url("img.jpg");
+  background-size: 100% 100%;
+}
+/* CSS */
+.thankyou-container {
+  display: flex;
+  background-color: white;
+  height: fit-content;
+}
+
+.graph-display {
+  /* background-color: white;
+  height: 100vh; */
+}
+
+.thankyou-title {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.thankyou-text {
+  font-size: 1.5rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  width: 100vh;
+}
+h1 {
+  margin: 0px;
+}
+.header {
+  background-color: #42b2fc;
+  text-align: start;
+  padding-left: 10px;
+  height: 9vh;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+.Mbox {
+  background: white;
+  height: 130px;
+  width: 130px;
+
+  padding: 40px 50px;
+
+  border: 3px solid #000000;
+
+  font-weight: 440;
+  font-size: 3rem;
+
+  padding-top: 0.65ch;
+  /* box-sizing: border-box; */
+}
+.mbox2 {
+  background: white;
+  height: 130px;
+  width: 130px;
+
+  border: 3px solid #000000;
+
+  text-align: center;
+  box-sizing: border-box;
+
+  font-size: 3rem;
+
+  padding: 0.5rem;
+}
+
+.obox {
+  background: #7ec6f5;
+  width: 60rem;
+
+  padding: 50px 0px;
+  margin: 105px 0px;
+
+  border-radius: 9vh;
+
+  font-size: 3rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.edsense {
+  font-size: 10vh;
+  font-size: 6.5vh;
+}
+.question {
+  padding-top: 2.5vh;
+  text-align: center;
+}
+.s {
+  padding-top: 2.2vh;
+  font-size: 7vh;
+  font-weight: 500;
+}
+.f {
+  padding-top: 2.2vh;
+  font-size: 7vh;
+  font-weight: 500;
+}
+.button1 {
+  margin-top: -2rem; /* Adjust this value to shift the button downwards */
+  padding: 1rem;
+  background-color: #42b2fc;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.errorTextbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10rem;
+}
+.errorText {
+  font-size: large;
+  position: absolute;
+  background-color: #42b2fc;
+  border-radius: 0.5rem;
+  color: black;
+  padding: 1rem 1.5rem;
+}
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 100vh;
+}
+.start-inner {
+  background-color: #42b2fc;
+  color: white;
+  padding: 2rem 2.5rem;
+  border-radius: 10px;
+  border: 0.5px solid rgb(97, 97, 97);
+  font-size: larger;
+  /* text-shadow: 10px 10px 10px rgba(0,0,0,0.3); */
+}
+.new {
+  display: flex;
+  justify-content: center;
+}
+
+.hintButton {
+  display: flex;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  background-image: linear-gradient(-180deg, #37aee2 0%, #1e96c8 100%);
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+.hintButton:hover {
+  background-color: #42b2fc;
+  color: white; /* Change the background color on hover */
+  transform: scale(1.05); /* Scale the button slightly on hover */
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 10px;
+  transition-duration: 0.1s;
+}
+
+.closeButton {
+}
+
+.levelDisplay {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: darkblue;
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
