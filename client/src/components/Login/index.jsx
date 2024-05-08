@@ -14,7 +14,12 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      // For Connection with Local Backend
       const url = "http://localhost:8080/api/auth";
+
+      // For Connection with Hosted Backend
+      // const url = "http://localhost:8080/api/auth";
+
       const { data: res } = await axios.post(url, data);
       localStorage.setItem("token", res.data);
       localStorage.setItem("payload", JSON.stringify(res.payload));

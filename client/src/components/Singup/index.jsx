@@ -23,7 +23,11 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      // For Connection with Local Backend
       const url = "http://localhost:8080/api/users";
+
+      // For Connection with Hosted Backend
+      // const url = "http://localhost:8080/api/users";
 
       const { data: res } = await axios.post(url, data);
       navigate("/login");
