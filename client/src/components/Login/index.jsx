@@ -15,12 +15,17 @@ const Login = () => {
     e.preventDefault();
     try {
       // For Connection with Local Backend
-      const url = "http://localhost:8080/api/auth";
-
-      // For Connection with Hosted Backend
       // const url = "http://localhost:8080/api/auth";
 
-      const { data: res } = await axios.post(url, data);
+      // For Connection with Hosted Backend
+      const url = "https://edsense.onrender.com/api/auth";
+
+      const headers = {
+        "Access-Control-Allow-Origin": "*",
+        // Add other headers if needed
+      };
+
+      const { data: res } = await axios.post(url, data, { headers });
       localStorage.setItem("token", res.data);
       localStorage.setItem("payload", JSON.stringify(res.payload));
       console.log(res.payload);

@@ -24,10 +24,10 @@ const Signup = () => {
     e.preventDefault();
     try {
       // For Connection with Local Backend
-      const url = "http://localhost:8080/api/users";
+      // const url = "http://localhost:8080/api/users";
 
       // For Connection with Hosted Backend
-      // const url = "http://localhost:8080/api/users";
+      const url = "https://edsense.onrender.com/api/users";
 
       const { data: res } = await axios.post(url, data);
       navigate("/login");
