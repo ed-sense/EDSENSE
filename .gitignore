@@ -2,3 +2,4 @@
 Essential_Documents/
 build/
 *.zip
+*.env
